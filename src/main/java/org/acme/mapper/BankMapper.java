@@ -1,6 +1,6 @@
 package org.acme.mapper;
 
-import org.acme.Bank;
+import org.acme.entity.Bank;
 import org.mapstruct.Mapper;
 import org.openapi.quarkus.api_yaml.model.BankDTO;
 

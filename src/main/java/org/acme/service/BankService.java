@@ -3,8 +3,7 @@ package org.acme.service;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
-import org.acme.Bank;
-import org.acme.mapper.BankMapper;
+import org.acme.entity.Bank;
 import org.acme.mapper.BankMapperImpl;
 import org.openapi.quarkus.api_yaml.model.BankDTO;
 

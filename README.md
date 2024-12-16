@@ -71,6 +71,33 @@ https://docs.quarkiverse.io/quarkus-openapi-generator/dev/client.html
 https://www.baeldung.com/java-performance-mapping-frameworks
 https://dzone.com/articles/comparing-modelmapper-and-mapstruct-in-java-the-po
 
+### Mapper Framework used here
+
+https://mapstruct.org
+
+#### Steps
+
+1.Add to pom file in plugins section
+
+    <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>${compiler-plugin.version}</version>
+        <configuration>
+          <annotationProcessorPaths>
+            <path>
+              <groupId>org.mapstruct</groupId>
+              <artifactId>mapstruct-processor</artifactId>
+              <version>${mapstruct.version}</version>
+            </path>
+            </annotationProcessorPaths>
+        </configuration>
+      </plugin>
+
+
+2.mvn clean compile
+
+3.@Inject FooMapperImpl not FooMapper interface
+
 ## Debug Port 5005
 quarkus dev --debug-mode:listen
 generate: remote lvm debug
